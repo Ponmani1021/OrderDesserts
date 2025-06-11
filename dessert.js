@@ -8,7 +8,8 @@ let newCardP = document.getElementById("newCardp");
 let totalVal = document.getElementById("totalVal");
 let orderCount = document.querySelector(".order-count");
 let confirmbox= document.getElementById("confirmbox");
-
+ 
+// Function for calculating product count and total price
 let cartItems = [];
 
 function updateTotalAndCount() {
@@ -22,6 +23,7 @@ function updateTotalAndCount() {
   orderCount.textContent = count;
 }
 
+// When the addToCard button is clicked Quantity controls button,selected item,Confirmbtn are shown and default img, default paragraph is hidden
 addToCartBtn.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     btn.style.display = "none";
@@ -31,12 +33,15 @@ addToCartBtn.forEach((btn, index) => {
     newOrder.style.display = "block";
     confirmbox.style.display = "block"
     
+    //confirmed box
 
-    let foodCard = btn.closest(".card");
-    let foodName = foodCard.querySelector(".food-text h2").textContent;
-    let foodAmount = foodCard.querySelector(".food-text h5").textContent;
-    let price = parseFloat(foodAmount.replace("$", ""));
+    let foodCard = btn.closest(".card");  //items are shown in confirmed box 
+    let foodName = foodCard.querySelector(".food-text h2").textContent; //Food name
+    let foodAmount = foodCard.querySelector(".food-text h5").textContent;  //food price
+    let price = parseFloat(foodAmount.replace("$", ""));  //for calculating price $ symbol is replaced with " " so that the amount is calculated.
 
+
+    //selected item in your Card 
     let quantity = 1;
 
     let itemDiv = document.createElement("div");
