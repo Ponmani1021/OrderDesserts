@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Your Order</title>
     <link rel="stylesheet" href="dessert.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
-    <section>
+<body class="modal.open">
+    <div class="main-container">
+         <section class="section1">
         <h1>Desserts</h1>
         <div class="container">
-            <!-- <h1>Desserts</h1> -->
             <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-waffle-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <button class="addto-cart-btn addtocartbtn" style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
                     <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
@@ -27,12 +34,17 @@
              <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-creme-brulee-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <button class="addto-cart-btn addtocartbtn"  style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                     <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
-                    <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
-                    <h2 style="color: rgb(63, 63, 63);">Waffle with Berries</h2>
-                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$6.50</h5>
+                    <h6 style="color: #7f8b97;font-size: 15px;">Creme Brulee</h6>
+                    <h2 style="color: rgb(63, 63, 63);">Vanilla Bean Creme Brulee</h2>
+                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$7.00</h5>
                 </div>
             </div>
            
@@ -40,99 +52,158 @@
              <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-macaron-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <button class="addto-cart-btn addtocartbtn"  style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                     <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
-                    <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
-                    <h2 style="color: rgb(63, 63, 63);">Waffle with Berries</h2>
-                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$6.50</h5>
+                    <h6 style="color: #7f8b97;font-size: 15px;">Macaron</h6>
+                    <h2 style="color: rgb(63, 63, 63);">Macaron Mix of Five</h2>
+                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$8.00</h5>
                 </div>
             </div>
+
 
             <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-tiramisu-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <button class="addto-cart-btn addtocartbtn"  style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                     <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
-                    <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
-                    <h2 style="color: rgb(63, 63, 63);">Waffle with Berries</h2>
-                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$6.50</h5>
+                    <h6 style="color: #7f8b97;font-size: 15px;">Tiramisu</h6>
+                    <h2 style="color: rgb(63, 63, 63);">Classic Tiramisu</h2>
+                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$5.50</h5>
                 </div>
             </div>
 
             <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-baklava-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <button class="addto-cart-btn addtocartbtn"  style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                     <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
-                    <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
-                    <h2 style="color: rgb(63, 63, 63);">Waffle with Berries</h2>
-                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$6.50</h5>
+                    <h6 style="color: #7f8b97;font-size: 15px;">Baklava</h6>
+                    <h2 style="color: rgb(63, 63, 63);">Pistachio Baklava </h2>
+                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$4.00</h5>
                 </div>
             </div>
 
             <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-meringue-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <button class="addto-cart-btn addtocartbtn"  style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                     <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
-                    <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
-                    <h2 style="color: rgb(63, 63, 63);">Waffle with Berries</h2>
-                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$6.50</h5>
+                    <h6 style="color: #7f8b97;font-size: 15px;">Pie</h6>
+                    <h2 style="color: rgb(63, 63, 63);">Lemon Meringue Pie</h2>
+                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$5.00</h5>
                 </div>
             </div>
 
             <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-cake-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                   <button class="addto-cart-btn addtocartbtn"  style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                     <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
-                    <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
-                    <h2 style="color: rgb(63, 63, 63);">Waffle with Berries</h2>
-                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$6.50</h5>
+                    <h6 style="color: #7f8b97;font-size: 15px;">Cake</h6>
+                    <h2 style="color: rgb(63, 63, 63);">Red Velvet Cake</h2>
+                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$4.50</h5>
                 </div>
             </div>
 
             <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-brownie-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <button class="addto-cart-btn addtocartbtn"  style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                     <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
-                    <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
-                    <h2 style="color: rgb(63, 63, 63);">Waffle with Berries</h2>
-                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$6.50</h5>
+                    <h6 style="color: #7f8b97;font-size: 15px;">Brownie</h6>
+                    <h2 style="color: rgb(63, 63, 63);">Salted Caramel Brownie</h2>
+                    <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$5.50</h5>
                 </div>
             </div>
 
             <div class="card">
                 <div class="food-box">
                     <img class="food-img" src="../DessertOrder/images/image-panna-cotta-desktop.jpg" alt="WaffleWithberries" title="Waffle With berries"><br>
-                    <button class="addto-cart-btn"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                    <button class="addto-cart-btn addtocartbtn"  style="display:block;"><img src="./images/icon-add-to-cart.svg" alt="">Add to Cart</button>
+                     <div class="quantity-control quantitycontrol" style="display: none;">
+                        <button class="minus"><img src="images/icon-decrement-quantity.svg" title="reduce"></button>
+                        <span class="quantity">1</span>
+                        <button class="plus"><img src="images/icon-increment-quantity.svg" title="add"></button>
+                    </div>
                 </div>
                 <div class="food-text">
-                    <h6 style="color: #7f8b97;font-size: 15px;">Waffle</h6>
-                    <h2 style="color: rgb(63, 63, 63);">Waffle with Berries</h2>
+                    <h6 style="color: #7f8b97;font-size: 15px;">Panna Cotta</h6>
+                    <h2 style="color: rgb(63, 63, 63);">Vanilla Panna Cotta</h2>
                     <h5 style="color: hsl(14, 86%, 42%);font-size: 19px;">$6.50</h5>
                 </div>
             </div>
-
             </div>
         </div>
-
-        
     </section>
-    
+    <section class="section2">
         <div class="order-cart">
             <h1>Your Card ( <span class="order-count"></span>)</h1>
-            <img src="images/illustration-empty-cart.svg" title="No Orders">
-            <p>Your added items will be appear here</p>
+            <img src="images/illustration-empty-cart.svg" title="No Orders" id="newCardImg">
+            <p id="newCardp">Your added items will be appear here</p>
+            <div id="new-order" style="display: none;">
+                <div id="card-item">
+                </div>
+            </div>
+            <div id="confirmbox" style="display: none;">
+                <span style="float: left;color: #7f8b97; font-size: 15px;">Order Total </span><span id="totalVal" style="float: right;font-size: 20px;"><b>$0.00</b></span>
+                <div id="carbon"> 
+                    <p id="carbonbox"><img src="images/icon-carbon-neutral.svg" alt="">This is a <strong> carbon-neutral</strong> delivery</p>
+                </div>
+                    <button id="confirmOrderbtn" onclick="confirmOrder()">Confirm Order</button>
+            </div>
         </div>
-
+    </section>
+    <section class="section3" style="display: none;">
+        <div id="popup-box">
+             <div id="Orderedbox">
+            <img src="images/icon-order-confirmed.svg" title="order has been placed">
+            <h1>Order Confirmed</h1>
+            <p>We hope you enjoy your food!</p>
+            <div id="orderedlist">
+            </div>
+            <button id="cancelbtn" onclick="CancelBtn()">Start New Order</button>
+        </div>
+        </div>
+       
+    </section>
+</div>
+   
     <script src="dessert.js"></script>
 </body>
 </html>
