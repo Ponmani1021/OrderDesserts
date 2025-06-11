@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Your Order</title>
     <link rel="stylesheet" href="dessert.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awesome for icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Savate:ital,wght@0,200..900;1,200..900&family=Young+Serif&display=swap" rel="stylesheet">
 
 </head>
-<body class="modal.open">
+<body>
     <div class="main-container">
+        <!-- Product list -->
          <section class="section1">
         <h1>Desserts</h1>
         <div class="container">
@@ -171,9 +177,12 @@
             </div>
         </div>
     </section>
+
+    <!-- Your Card list box -->
+
     <section class="section2">
         <div class="order-cart">
-            <h1>Your Card ( <span class="order-count"></span>)</h1>
+            <h1>Your Card(<span class="order-count"></span>)</h1>
             <img src="images/illustration-empty-cart.svg" title="No Orders" id="newCardImg">
             <p id="newCardp">Your added items will be appear here</p>
             <div id="new-order" style="display: none;">
@@ -189,6 +198,7 @@
             </div>
         </div>
     </section>
+    <!-- Confirmation list -->
     <section class="section3" style="display: none;">
         <div id="popup-box">
              <div id="Orderedbox">
@@ -200,7 +210,6 @@
             <button id="cancelbtn" onclick="CancelBtn()">Start New Order</button>
         </div>
         </div>
-       
     </section>
 </div>
    

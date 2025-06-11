@@ -132,8 +132,8 @@ function showOrderConfirmation() {
       <img src="${item.image}" alt="${item.name}">
       <div class="ordered-details">
         <strong>${item.name}</strong><br>
-        Quantity: ${item.quantity}<br>
-        Price: $${(item.price * item.quantity).toFixed(2)}
+        Quantity: <span style="color:hsl(14, 86%, 42%)">${item.quantity}</span><br>
+        Price: <span style="color:hsl(14, 86%, 42%)">$${(item.price * item.quantity).toFixed(2)}</span>
       </div>
     `;
 
@@ -143,19 +143,12 @@ function showOrderConfirmation() {
   orderedTotal.innerHTML = `Total: $${total.toFixed(2)}`;
   orderedList.appendChild(orderedTotal);
 
-  let deleteBtn = document.createElement("button");
-  deleteBtn.id = "deleteOrderBtn";
-  deleteBtn.textContent = "Delete Order";
-  deleteBtn.onclick = CancelBtn;
-  orderedList.appendChild(deleteBtn);
-
-  document.querySelector(".section3").style.display = "block";
 }
 document.getElementById("confirmOrderbtn").addEventListener("click", () => {
   showOrderConfirmation();
 });
 
+// when the Confirm order btn is clicked the ordered list popup will be displayed
 function confirmOrder(){
   section3.style.display = "block"
-
 }

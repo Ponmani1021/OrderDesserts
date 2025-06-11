@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: serif;
+    font-family: "EB Garamond", serif;
 }
 
 .main-container{
@@ -13,7 +13,8 @@ body{
     align-items: flex-start;
 }
 
-/* Images */
+/* Product list*/
+
 h1{
     font-size: 40px;
     margin: 20px 10px;
@@ -22,7 +23,6 @@ h1{
     width: 250px;
     height: auto;
     position: relative;
-   
 }
 
 .food-box .food-img{
@@ -137,6 +137,113 @@ h1{
 .order-cart h1{
     color:  hsl(14, 86%, 42%); ;
 }
+
+
+/* Confrim order */
+
+#confirmbox{
+    line-height: 40px;
+}
+#carbon{
+    background-color: #e0e1e2;
+    padding: 8px 15px;
+    width: 80%;
+    text-align: center;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px ;
+}
+
+#confirmOrderbtn{
+    border-radius: 15px;
+    padding: 13px 20px;
+    color: #fff;
+    width: 80%;
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+    margin-top: 10px;
+    cursor: pointer;
+}
+#confirmOrderbtn:hover{
+    transform: scale(.99);
+}
+/* whole screen */
+#popup-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Orderedbox{
+    position: fixed;
+    left: 40%;
+    top: 20%;
+    background-color: #fff;
+    width: 400px;
+    max-height: 80vh;
+    overflow-y: auto; /*enable scrolling when the list is too long*/
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+#cancelbtn{
+    border-radius: 15px;
+    padding: 13px 20px;
+    color: #fff;
+    width: 80%;
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+    margin-bottom: 20px;
+    margin-left: 38px;
+    cursor: pointer;
+}
+#cancelbtn:hover{
+    transform: scale(.99);
+}
+#Orderedbox img{
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 50px;
+}
+#Orderedbox p{
+    margin-left: 20px;
+    color: #7f8b97;
+}
+
+/* created in js */
+#orderedlist .ordered-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+#orderedlist .ordered-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+#orderedlist .ordered-details {
+  text-align: left;
+  flex: 1;
+}
+
+#orderedTotal {
+  font-weight: bold;
+  margin: 20px 0;
+  color: hsl(14, 86%, 42%);
+  font-size: 20px;
+}
+
 /* Making responsive */
 
 @media (max-width:1200px){
@@ -168,6 +275,9 @@ h1{
         position: relative;
         left: 30px;
     }
+    #Orderedbox{
+        left: auto;
+    }
 }
 
 @media (max-width:600px){
@@ -183,87 +293,11 @@ h1{
         position: relative;
         left: 30px;
     }
+    #Orderedbox{
+        left: auto;
+        top: 20%;
+        width: 300px;
+    }
 }
 
-
-/* Confrim order */
-
-#confirmbox{
-    line-height: 40px;
-}
-#carbon{
-    background-color: #e0e1e2;
-    padding: 8px 15px;
-    width: 80%;
-    text-align: center;
-    border-radius: 9px;
-    display: flex;
-    justify-content: center;
-    margin-left: 40px ;
-}
-
-#confirmOrderbtn{
-    border-radius: 15px;
-    padding: 13px 20px;
-    color: #fff;
-    width: 80%;
-    border: none;
-    background-color: hsl(14, 86%, 42%);
-    margin-top: 10px;
-}
-
-/* confirm ordered box */
-
-/* .section3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    
-} */
-#popup-box{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.6);
-    z-index: 999;
-}
-#Orderedbox{
-    position: fixed;
-    left: 40%;
-    top: 30%;
-    transform: rg;
-    background-color: #fff;
-    width: 400px;
-    height: 300px;
-    z-index: 1000;
-    box-shadow: 0 0 15px rgba(0,0,0,.5);
-}
-body.modal-open{
-    overflow: hidden;
-}
-#cancelbtn{
-    border-radius: 15px;
-    padding: 13px 20px;
-    color: #fff;
-    width: 80%;
-    border: none;
-    background-color: hsl(14, 86%, 42%);
-    margin-top: 20px;
-    margin-left: 38px;
-}
-#Orderedbox img{
-    margin-top: 20px;
-    margin-left: 15px;
-    width: 50px;
-}
-#Orderedbox p{
-    margin-left: 20px;
-    color: #7f8b97;
-}
 
