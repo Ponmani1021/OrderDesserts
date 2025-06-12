@@ -122,6 +122,7 @@ let cancelBtn = document.getElementById("cancelbtn")
 let section3 = document.querySelector(".section3")
 function CancelBtn(){
   section3.style.display = "none"
+  location.reload();
 }
 
 let orderedList = document.getElementById("orderedlist");
