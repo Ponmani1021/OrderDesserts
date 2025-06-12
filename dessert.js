@@ -79,36 +79,41 @@ addToCartBtn.forEach((btn, index) => {
     let itemQtySpan = itemDiv.querySelector(".item-qty");
 
     plusBtn.addEventListener("click", () => {
-      quantity++;
-      quantitySpan.textContent = quantity;
-      itemQtySpan.textContent = quantity;
-      cartItems[index].quantity = quantity;
-      updateTotalAndCount();
-    });
+    quantity++;
+    quantitySpan.textContent = quantity;
+    itemQtySpan.textContent = quantity;
+    let cartItem = cartItems.find(item => item.name === foodName);
+    if (cartItem) cartItem.quantity = quantity;
+    updateTotalAndCount();
+  });
 
-    minusBtn.addEventListener("click", () => {
-      if (quantity > 1) {
-        quantity--;
-        quantitySpan.textContent = quantity;
-        itemQtySpan.textContent = quantity;
-        cartItems[index].quantity = quantity;
-        updateTotalAndCount();
-      } else {
-        quantityControls[index].style.display = "none";
-        btn.style.display = "block";
-        cardItemContainer.removeChild(itemDiv);
-        cartItems.splice(index, 1);
-        updateTotalAndCount();
-      }
-    });
+
+   minusBtn.addEventListener("click", () => {
+  if (quantity > 1) {
+    quantity--;
+    quantitySpan.textContent = quantity;
+    itemQtySpan.textContent = quantity;
+    let cartItem = cartItems.find(item => item.name === foodName);
+    if (cartItem) cartItem.quantity = quantity;
+    updateTotalAndCount();
+  } else {
+    quantityControls[index].style.display = "none";
+    btn.style.display = "block";
+    cardItemContainer.removeChild(itemDiv);
+    cartItems = cartItems.filter(item => item.name !== foodName);
+    updateTotalAndCount();
+  }
+});
+
 
     itemDiv.querySelector(".remove-item").addEventListener("click", () => {
-      quantityControls[index].style.display = "none";
-      btn.style.display = "block";
-      cardItemContainer.removeChild(itemDiv);
-      cartItems.splice(index, 1);
-      updateTotalAndCount();
-    });
+  quantityControls[index].style.display = "none";
+  btn.style.display = "block";
+  cardItemContainer.removeChild(itemDiv);
+  cartItems = cartItems.filter(item => item.name !== foodName);
+  updateTotalAndCount();
+});
+
   });
 });
 
